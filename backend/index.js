@@ -22,6 +22,13 @@ app.get('/api/info', (req, res) => {
         carrera: 'Ingeniería en Sistemas',
         proyectos: 5,
       },
+      {
+        carnet: '00016824',
+        nombre: 'Javier Omar Ramirez Villanueva',
+        ciudad: 'San Salvador',
+        carrera: 'Ingeniería en Sistemas',
+        proyectos: 4,
+      },
     ],
   })
 })
