@@ -5,6 +5,42 @@
   color: #333;
 }
 
+
+.health {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.health-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 1.5rem;
+  border-left: 6px solid #28a745;
+  border-radius: 8px;
+  background-color: #e9f7ef;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.health-card h4 {
+  margin-bottom: 0.5rem;
+  color: #1e7e34;
+}
+
+.health-card p {
+  margin: 0;
+  color: #333;
+}
+
+.health-error {
+  border-left-color: #dc3545;
+  background-color: #fdecea;
+}
+
+.health-error h4 {
+  color: #b02a37;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
