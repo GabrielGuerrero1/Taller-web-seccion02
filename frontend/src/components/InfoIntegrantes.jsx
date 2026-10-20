@@ -8,7 +8,10 @@ function InfoIntegrantes() {
 
   useEffect(() => {
     fetch('/api/info')
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error('Error en la peticion')
+        return res.json()
+      })
       .then((data) => setIntegrantes(data.integrantes))
       .catch(() => setError(true))
       .finally(() => setCargando(false))

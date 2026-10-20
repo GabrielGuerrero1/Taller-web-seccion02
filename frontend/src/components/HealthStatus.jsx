@@ -6,7 +6,10 @@ function HealthStatus() {
 
   useEffect(() => {
     fetch('/api/health')
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error('Error en la peticion')
+        return res.json()
+      })
       .then((data) => setMensaje(data.message))
       .catch(() => setError(true))
   }, [])
